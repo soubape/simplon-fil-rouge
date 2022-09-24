@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-header">Add products</div>
+  
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">idProduit</label>
+          <input
+            type="number"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="le nom"
+            name="idCategorie"
+            [(ngModel)]="categorie.idCategorie"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleFormControlInput1">title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="le Prenom"
+            name="label"
+            [(ngModel)]="categorie.label"
+          />
+        </div>
+
+
+   
+      
+        
+
+        
+        <button (click)="MethodeAjouterCategorie()" type="button" class="btn btn-light">
+          Enregistrer
+        </button>
+      </form>
+    </div>
+  </div>

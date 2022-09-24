@@ -1,0 +1,77 @@
+<div class="card">
+    <div class="card-header">Add products</div>
+  
+    <div class="card-body">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">idProduit</label>
+          <input
+            type="number"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="le nom"
+            name="idProduit"
+            [(ngModel)]="produits.idProduit"
+          />
+        </div>
+  
+        <div class="form-group">
+          <label for="exampleFormControlInput1">title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="le Prenom"
+            name="title"
+            [(ngModel)]="produits.title"
+          />
+        </div>
+
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">dateCommande</label>
+          <input
+            type="date"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="le Prenom"
+            name="dateCommande"
+            [(ngModel)]="produits.dateCommande"
+          />
+        </div>
+
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">quantite</label>
+          <input
+            type="number"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="le Prenom"
+            name="quantite"
+            [(ngModel)]="produits.quantite"
+          />
+        </div>
+
+  
+        <div class="form-group">
+            <label for="exampleFormControlInput1">CategorieId</label>
+            <input
+              type="number"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="le Prenom"
+              name="categorieId"
+              [(ngModel)]="produits.categorieId"
+            />
+          </div>
+      
+        
+
+        
+        <button (click)="methodeAjoutProduit()" type="button" class="btn btn-light">
+          Enregistrer
+        </button>
+      </form>
+    </div>
+  </div>
