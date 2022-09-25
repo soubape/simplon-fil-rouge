@@ -8,6 +8,8 @@ import { ProduitsServiceService } from '../services/produits-service.service';
 })
 export class ProduitsComponent implements OnInit {
   List:any=[];
+  searchText:any;
+
   constructor(private data : ProduitsServiceService) { }
 
   ngOnInit(): void {

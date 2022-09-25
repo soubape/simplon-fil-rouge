@@ -1,5 +1,13 @@
 
 <div class="container">
+    <input
+    [(ngModel)]="searchText"
+    type="text"
+    class="form-control"
+    placeholder="taper un mot cle"
+    aria-label="Recipient's username"
+    aria-describedby="basic-addon2"
+  />
 <table class="">
     <button routerLink="ajout" type="button" class="btn btn-primary">Ajouter</button>
 
@@ -13,7 +21,7 @@
     </tr>
 
 
-    <tr *ngFor="let p of List">
+    <tr *ngFor="let p of List | filter : searchText">
         <td>{{p.idProduit}}</td>
         <td>{{p.title}}</td>
         <td>{{p.quantite}}</td>
