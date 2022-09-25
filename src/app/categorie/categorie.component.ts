@@ -10,6 +10,8 @@ export class CategorieComponent implements OnInit {
 
   constructor(private data : CategorieServiceService) { }
   List:any=[];
+  searchText:any;
+
   ngOnInit(): void {
     this.MethodeGet();
   }
